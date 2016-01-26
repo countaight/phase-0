@@ -9,6 +9,7 @@
 * Which parts of the challenge did you find tedious?
 
 The 6 phases of design are:
+
 1. Information Gathering
 	At this initial step certain things are considered when starting the project. This includes, the purpose of the website (will it sell a product or a service? will it provide information?), the goal (to get more clients, to increase sales?), the target audience (is it teenagers? adults? adults with kids?), and finally, content (will there be articles? blog posts?).
 2. Planning
