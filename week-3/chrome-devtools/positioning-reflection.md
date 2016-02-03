@@ -1,0 +1,1 @@
+![Exercise 3.4.1](imgs/Challenge1.png)
