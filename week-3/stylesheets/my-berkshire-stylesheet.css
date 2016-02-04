@@ -1,0 +1,100 @@
+/* GENERAL */
+a:link {
+  color: #800080;
+}
+
+a:visited {
+  color: #ff0000;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+
+
+/* HEADER */
+
+header, header p {
+  color: #000080;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+/* MAIN AREA LINKS */
+
+ul {
+  list-style-position: inside;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+ul p {
+  margin: 0;
+}
+
+ul li {
+  margin: 20px;
+}
+
+
+
+/* RESIZE FONTS */
+
+.big {
+  font-size: 30px;
+}
+
+.small {
+  font-size: 10px;
+}
+
+
+
+/* ASIDE GEICO */
+
+img.display {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+aside {
+  text-align: center;
+}
+
+
+
+/* HORIZONTAL BREAK LINE */
+
+div.horizontal {
+  background: #888888;
+  width: 100%;
+  height: 2px;
+}
+
+
+
+/*
+
+- What is important to know when linking an external file (like a stylesheet) to an HTML file?
+- What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+- What CSS did you use to modify the element style (like size, color, etc.)
+- Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+- When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+Linking a file to html is comprised of four different parts. The main part is the <link> self-closing tag, with 3 attributes: the rel attribute describes the relationship of the external file, in our case a "stylesheet, followed by the type (in our case "text/css") and finally the source or href of the actual file. It's important to remember this external file as it pertains to the html file in order to include the relative path of the file for better portability of the project.
+
+Some tricks i used to help with positioning, was adding a background color and borders to my elements so I could see exactly where they were placed. The nuances of styles added by the web browser made it very difficult to place things where I wanted. For example, creating a two column main section pushed the first line of the unordered list down. This forced us to bypass these properties through creative use of other properties.
+
+We used font-size to change the size of fonts. We used font-color and background-color to change the colors of the links and background, respectively. We also used a two colum property to split the links into two columns.
+
+We ended up modifying the HTML to include classes and some <span> tags. We picked classes over id's because, classes can be used with multiple elements in order for them to share similar properties. There can only be a single id per element, so we found that to be too limited and really didn't need properties for one very specific element. The classes on the other hand, we used to apply small and big size fonts where needed. Classes also made it very easy to identify the appropriate HTML tag in our CSS code, for example the class of "horizontal" on the div denoted it as the horizontal break line.
+
+Despite not being able to make the site look exactly like the original, we felt our code was cleaner and had better practices. The original page was riddled with table tags, ids, and classes, that makes upkeep of the HTML code very difficult. Furthermore, some of the style was applied directly into the HTML which makes repetition inevitable. A better practice, such as what we did, is to use classes on similar elements of the site and style them on a separate CSS sheet. As it stands, we can see the original site being very difficult to modify with their current code. Our code makes it a lot easier for modifications.
+
+*/
