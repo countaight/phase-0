@@ -36,3 +36,12 @@ body {
   left: 200px;
   height: 100px;
 }
+
+#div-inside-div {
+  background-color: lightblue;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
