@@ -8,3 +8,8 @@
 hours_in_a_day = 365 * 24
 puts hours_in_a_day
 ```
+
+```ruby
+minutes_in_a_decade = 365 * 24 * 60 * 10
+puts minutes_in_a_decade
+```
