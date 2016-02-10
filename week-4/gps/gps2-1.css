@@ -1,0 +1,37 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #e5f0ff;
+}
+
+header {
+  background-color: lightblue;
+  padding: 1%;
+}
+
+.column-1, .column-2 {
+  width: 46%;
+  float: left;
+  margin: 1%;
+  padding: 1%;
+}
+
+h2 {
+  background-color: lightgray;
+}
+
+code {
+  background-color: #e6e6e6;
+  margin: 0.5%;
+  padding: 0.5%;
+}
+
+footer {
+  text-align: center;
+  clear: both;
+  background-color: #4D94FF;
+  padding: 1%;
+}
+
+footer a {
+  color: white;
+}
