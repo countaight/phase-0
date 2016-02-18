@@ -1,6 +1,6 @@
 # Research Methods
 
-# I spent [] hours on this challenge.
+# I spent [1.5] hours on this challenge.
 
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
@@ -50,6 +50,11 @@ end
 
 
 # Person 4
+# Pseudocode
+# Take an existing list, and letter or word.
+# Search through the list to see if any element contains the inputted letter or word and save it in another list.
+# Take the saved list and delete each element matching on both lists.
+
 def my_array_deletion_method!(source, thing_to_delete)
   words_to_delete = source.find_all { |f| f.to_s.include?(thing_to_delete)}
   words_to_delete.each do |word|
@@ -58,6 +63,9 @@ def my_array_deletion_method!(source, thing_to_delete)
   p source
 end
 
+# Pseudocode
+# Take an existing list, and word.
+# Find the word inside the list and delete it.
 
 def my_hash_deletion_method!(source, thing_to_delete)
   source.delete(thing_to_delete)
