@@ -20,20 +20,19 @@
 # Initial Solution
 
 class Die
-  def initialize(sides)
-  	if not sides.empty?
-  		@sides = sides
+  attr_reader :labels, :sides
+
+  def initialize(labels)
+  	if not labels.empty?
+      @labels = labels
+  		@sides = labels.size
   	else
   		raise ArgumentError.new("need more sides bub")
   	end
   end
 
-  def sides
-  	@sides.size
-  end
-
   def roll
-  	p @sides[rand(sides)]
+  	labels[rand(sides)]
   end
 end
 
@@ -42,22 +41,16 @@ end
 # Refactored Solution
 
 class Die
-	attr_reader :sides
+  attr_reader :labels, :sides
 
-  def initialize(sides)
-  	unless sides.empty?
-  		@sides = sides
-  	else
-  		raise ArgumentError.new("need more sides bub")
-  	end
-  end
-
-  def sides
-  	@sides.size
+  def initialize(labels)
+    @labels = labels
+    @sides = labels.size
+    raise ArgumentError.new("need more sides bub") if @labels.empty?
   end
 
   def roll
-  	p @sides.at(rand(sides))
+    labels.sample
   end
 end
 
