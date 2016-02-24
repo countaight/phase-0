@@ -58,6 +58,8 @@
 # Refactored Solution
 
 class GuessingGame
+  attr_reader :last_guess, :last_result
+
   def initialize(answer)
     @answer = answer
     @last_guess = nil
@@ -76,11 +78,7 @@ class GuessingGame
   end
 
   def solved?
-    if @last_result == :correct
-      true
-    else
-      false
-    end
+    @last_result == :correct ? true : false
   end     
 end
 
