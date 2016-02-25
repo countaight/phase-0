@@ -58,7 +58,7 @@
 # Refactored Solution
 
 class GuessingGame
-  attr_reader :last_guess, :last_result
+  attr_accessor :last_guess, :last_result
 
   def initialize(answer)
     @answer = answer
@@ -81,6 +81,22 @@ class GuessingGame
     @last_result == :correct ? true : false
   end     
 end
+
+# Driver Code
+puts "Enter a difficulty between 1-100"
+difficulty = 10 * gets.chomp.to_i
+
+fungame = GuessingGame.new(rand(difficulty))
+
+until fungame.solved?
+  p "Ready to guess?"
+  fungame.last_guess = gets.chomp.to_i
+  fungame.guess(fungame.last_guess)
+  p "#{fungame.last_guess} was #{fungame.last_result}"
+  puts ""
+end
+
+p "You solved the game, yay!"
 
 
 
