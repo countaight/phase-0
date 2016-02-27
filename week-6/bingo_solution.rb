@@ -16,7 +16,6 @@
   # Going through the rows and using the position reference
     # Search for the number, IF it is found
       # Replace the item with an 'x'
-      # Make sure number can't be used again with another letter
 
 # Display a column to the console
   # Show the items in that position represented by that letter.
@@ -140,4 +139,26 @@ end
 
 
 #Reflection
+
+# How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+# I didn't find it difficult at all, what really helped was the fact that bingo is just a series of indices and numbers, and so it was very easy translating bingo language into pseudocode. It was great just being to write out the steps of playing a bingo game. I find that it's getting easier to write out my ideas and translate them into pseudocode, making sure I don't use programming language.
+
+
+# What are the benefits of using a class for this challenge?
+# The class easily contains the methods and attributes of the game neatly sorted. By creating these methods inside the class, the game can be run by initializing a game and calling its methods to run the game separately and at command. Furthermore, any future implementations can be worked on inside the class without affecting any of the outside code.
+
+# How can you access coordinates in a nested array?
+# Coordinates in  a nested array can be accessed by calling the index on and index. So for example, an array with a single element, nested inside another array--the element can be accessed through array[0][0]. Another way to access these coordinates is by iterating through arrays using methods such as #each or #map. This enables every index to be aliased by a chosen variable and in turn that variable can but run with another iterator or the index itself. This is great for performing multiple actions on nested arrays.
+
+# What methods did you use to access and modify the array?
+# I initally used each and variable assigment. So I ran an each loop and looked through the indices of the indices and if it found the value, the value was reassigned to 'X'.
+
+# Give an example of a new method you learned while reviewing the Ruby docs. Based on what you see in the docs, what purpose does it serve, and how is it called?
+# I found the method #with_index, to use in my refactored to code. In conjuction with the #map! method, I was able to access both the element and the index number of every array as an assigned variable, and that allowed to no only condense the each loop, but also keep everything contained within one block of code. The #with_index allows an array to be iterated through, but instead of outputting each element, it outputs each index number (i.e. 0, 1, 2, 3 etc.). It is called by attaching it to a map or collect method then supplying a block where, two variables hold the iteration of each element and the iteration of every index number.
+
+# How did you determine what should be an instance variable versus a local variable?
+# I knew that if I needed the variable to be shared among methods, it had to be an instance variable. Also, any variable that needed to be visible outside the class needed to be an instance variable.  I used local variable outside the class to be able to hold the information I would eventually pass into the class and methods. 
+
+# What do you feel is most improved in your refactored solution?
+# I feel, that condensing the check method to make it more readable and hopefully more efficient, is the biggest improvement in the code. I'm not too aware about program memory efficiency yet, but I believe the less steps a method has to take to get the output, the better. Also these improved methods cut down on the amount of instance or local variables I need therefore cutting down on the amount of memory the program is using.
 
