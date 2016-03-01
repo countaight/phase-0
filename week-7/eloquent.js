@@ -15,14 +15,14 @@ var hashtag = "#";
 while(hashtag.length <= 7) {
 	console.log(hashtag);
 	hashtag += "#";
-}
+};
 
 // Functions
 
 var favoriteFood = function() {
 prompt("What's your favorite food, mate?");
 console.log("Hey! That's my favorite too!");
-}
+};
 
 // Complete the `minimum` exercise.
 
