@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [with: Charles Lee].
+# We spent [1] hours on this challenge.
 
 # EXPLANATION OF require_relative
 # require and require_relative are built in methods that accept strings as arguments. require tries to search for a specific Ruby library (gem). require_relative allows you to search for an actual file with code in it.
@@ -116,7 +116,7 @@ end
   # The top most hash uses rocket notation which allows strings, numbers, etc to be the keys for the hash. The nested hash uses symbol notation which simultaneously creates unique symbols for the keys of the hash.
 
 # What does require_relative do? How is it different from require?
-  # require_relative allows files to be loaded relative to the file being worked on, this can include test files or other files with code in it. It's different from require, in that require looks for gems with methods inside the Ruby library.
+  # require_relative allows files to be loaded relative to the file being worked on, this can include test files or other files with code in it. The working file also has access to any piece of the code, including variables and methods. It's different from require, in that require looks for gems with methods inside the Ruby library.
 
 # What are some ways to iterate through a hash?
   # With the #each method we can take each element in the hash and access it through its keys, including any nested hashes in there.
