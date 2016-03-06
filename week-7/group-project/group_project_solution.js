@@ -5,3 +5,18 @@
 
 // Tests 1, 4, 7, 8, and 9 passed. Tests 2, 3, 5, 6 did not pass.
 // I believe the test failed because the functions did not return anything.
+
+// We passed tests:
+// 1 - sum is a function
+// 4 - mean is a function
+// 7 - median is a function
+// 8 - median returns the median value from an array with an odd length of elements
+// 9 - media returns the median value from an array with an even length of elements
+
+// We unfortunately did pass the following:
+// 2 - sum returns the value from an array with an odd length of elements
+// 3 - sum returns the value from an array with an even length of elements
+// Looking at the code I noticed that there was no return for the value, there was only a console.log statement. I don't think JavaScript has implicit return.
+// 5 - mean returns the value from an array with an odd length of elements
+// 6 - mean returns the value from an array with an even length of elements
+// These had the same problem as the previous function. There is a return in there, but that returns it to the last function that called it, but it wasn't returned at the end of the mean function.

@@ -117,4 +117,3 @@ assert(
   "9. "
 )
 
-// Tests 1, 4, 7, 8, and 9 passed. Tests 2, 3, 5, 6 did not pass.
