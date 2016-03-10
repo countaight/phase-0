@@ -80,6 +80,12 @@ function average(array) {
   return avg;
 }
 
+// or
+
+function average(array) {
+ var avg = array.reduce( (prev, curr) => prev + curr )/array.length;
+  return avg;
+} //doesn't work in node
 
 
 
@@ -87,9 +93,19 @@ function average(array) {
 // Reflect
 
 
+// What did you learn about adding functions to objects?
+
+// You can add functions much in the same way you add properties and values, with bracket notation or dot notation followed by the assinging symbol '=' and then the function.
 
 
+// How did you iterate over nested arrays in JavaScript?
 
+// We initially used a for loop that used a variable i as a counter that increased after every iteration, and stopped when it reached the lenght of the array. Through every iteration the variable lent itself as an index number for the elements in the array thus giving us the ability to call each element and assign it as a property. When we refactored with opted for a for(in) loop which allows us to condense the counter expression by naving each element (in our case we named it index) inside the array.
+
+
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+
+// We incorporated the reduce function which is very similar to the reduce/inject function in Ruby. We furthered condensed the code by using an arrow notation.
 
 
 
